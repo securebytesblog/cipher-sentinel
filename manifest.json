@@ -9,7 +9,13 @@
   },
   "devtools_page": "devtools.html",
   "permissions": [
-    "devtools",
-    "devtools.network"
+    "debugger"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ]
+  // "permissions": [
+  //   "devtools",
+  //   "devtools.network"
+  // ]
 }

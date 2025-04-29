@@ -4,22 +4,44 @@
   <meta charset="UTF-8" />
   <style>
     body { font-family: sans-serif; padding: 10px; }
+    #controls { margin-bottom: 10px; }
+    #controls > * { margin-right: 8px; }
     table { border-collapse: collapse; width: 100%; margin-top: 10px; }
     th, td { border: 1px solid #ccc; padding: 6px 8px; }
-    th { background: #f4f4f4; }
-    .alert { color: #a00; font-weight: bold; }
-    #refresh { margin-bottom: 10px; }
+    th { background: #f4f4f4; cursor: pointer; }
+    tr.critical { background: #fdecea; }
+    tr.warning  { background: #fff4e5; }
+    tr.info     { background: #e8f4fd; }
+    .alert { color: #a00; font-weight: bold; margin-top: 10px; }
   </style>
 </head>
 <body>
   <h2>SSL Checker Report</h2>
-  <button id="refresh">Refresh</button>
+  <div id="controls">
+    <input type="text" id="filter" placeholder="Filter host…" />
+    <label><input type="checkbox" id="filter-info" checked /> Info</label>
+    <label><input type="checkbox" id="filter-warning" checked /> Warning</label>
+    <label><input type="checkbox" id="filter-critical" checked /> Critical</label>
+    <button id="download">Download CSV</button>
+  </div>
+
   <div id="alerts"></div>
   <table id="details">
     <tr>
-      <th>Host</th><th>Protocol</th><th>Cipher</th><th>Key Exchange</th><th>Issuer</th><th>Valid From</th><th>Valid To</th><th>RSA Key Size</th>
+      <th>Host</th>
+      <th>Protocol</th>
+      <th>Cipher</th>
+      <th>Key Exchange</th>
+      <th>Issuer</th>
+      <th>Valid From</th>
+      <th>Valid To</th>
+      <th>Expires In</th>
+      <th>RSA Bits</th>
+      <th>Alerts</th>
+      <th>Headers</th>
     </tr>
   </table>
+
   <script src="panel.js"></script>
 </body>
 </html>
