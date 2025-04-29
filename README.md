@@ -1,6 +1,6 @@
-# SSL Checker Chrome DevTools Extension
+# cipher-sentinel Chrome DevTools Extension
 
-**SSL Checker** is a Chrome DevTools extension that inspects SSL/TLS configurations for all network requests on a page, displaying protocol, cipher suite, certificate details, and flagging any weak or deprecated settings.
+**cipher-sentinel** is a Chrome DevTools panel for continuous TLS inspection, header audits, expiry alerts, severity filters, and CVE lookups.
 
 ## Features
 
@@ -17,7 +17,7 @@
 2. Open Chrome and navigate to `chrome://extensions`.
 3. Enable **Developer mode**.
 4. Click **Load unpacked** and select this folder.
-5. Open DevTools (`F12`), switch to the **SSL Checker** panel, and click **Refresh**.
+5. Open DevTools (`F12`), switch to the **cipher-sentinel** panel, and click **Refresh**.
 
 ## Usage
 
