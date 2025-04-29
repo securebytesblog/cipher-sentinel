@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 6px 8px; }
+    th { background: #f4f4f4; }
+    .alert { color: #a00; font-weight: bold; }
+    #refresh { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>SSL Checker Report</h2>
+  <button id="refresh">Refresh</button>
+  <div id="alerts"></div>
+  <table id="details">
+    <tr>
+      <th>Host</th><th>Protocol</th><th>Cipher</th><th>Key Exchange</th><th>Issuer</th><th>Valid From</th><th>Valid To</th><th>RSA Key Size</th>
+    </tr>
+  </table>
+  <script src="panel.js"></script>
+</body>
+</html>

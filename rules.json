@@ -1,0 +1,12 @@
+{
+  "minTlsVersion": "TLS 1.2",
+  "weakCiphers": [
+    "RC4",
+    "3DES",
+    "AES_128_CBC_SHA",
+    "AES_256_CBC_SHA",
+    "DES",
+    "MD5"
+  ],
+  "minRsaBits": 2048
+}

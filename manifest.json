@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SSL Checker",
+  "description": "Inspect TLS/SSL implementation: protocol, cipher, certificate details, and flag weak settings.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "128": "icons/icon128.png"
+  },
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "devtools",
+    "devtools.network"
+  ]
+}
