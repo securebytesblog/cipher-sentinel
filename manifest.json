@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "SSL Checker",
+  "name": "CipherSentinel",
   "description": "Inspect TLS/SSL implementation: protocol, cipher, certificate details, and flag weak settings.",
   "version": "0.1.0",
   "icons": {
